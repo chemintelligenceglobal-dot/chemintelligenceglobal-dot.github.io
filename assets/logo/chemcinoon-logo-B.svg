@@ -1,6 +1,11 @@
-<svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
-  <text x="50%" y="55%" font-size="52" font-weight="700" font-family="Inter, system-ui, sans-serif"
-        text-anchor="middle" fill="#111111" letter-spacing="0.15em">
-    CHEMCINOON
-  </text>
+<svg width="720" height="200" viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg">
+  <path d="M90 80 C45 0, 45 160, 90 80 Z
+           M90 80 C135 0, 135 160, 90 80 Z"
+        stroke="#f4c857" stroke-width="7" fill="transparent" stroke-linecap="round"/>
+  <circle cx="90" cy="80" r="10" fill="#f4c857" />
+  <circle cx="45" cy="80" r="9" fill="#111" />
+  <circle cx="135" cy="80" r="9" fill="#111" />
+
+  <text x="200" y="105" font-size="56" font-weight="700"
+        font-family="Inter, sans-serif" letter-spacing="0.12em" fill="#111">CHEMCINOON</text>
 </svg>
