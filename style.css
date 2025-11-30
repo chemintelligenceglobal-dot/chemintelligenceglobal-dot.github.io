@@ -320,3 +320,28 @@ footer {
 .legal-page a {
   color: #111111;
 }
+
+.cta-links {
+  margin-top: 18px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+.cta-alt {
+  font-size: 17px;
+  font-weight: 500;
+  color: #111;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: #f4c8571a;
+  border: 1.6px solid #f4c857;
+  transition: 0.25s ease;
+  text-decoration: none;
+}
+
+.cta-alt:hover {
+  background: #f4c857;
+  color: #111;
+  transform: translateY(-1px);
+}
