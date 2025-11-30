@@ -1,0 +1,66 @@
+:root {
+    --bg: #0a0b16;
+    --fg: #f6f7fc;
+    --accent: #f4c857;
+    --dim: #a9abc7;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; font-family: "Inter", sans-serif; }
+
+body { background:var(--bg); color:var(--fg); line-height:1.6; }
+
+
+/* HERO */
+.hero {
+    text-align:center;
+    padding:140px 24px;
+    background:radial-gradient(circle at top, #2a2e6a, #0a0b16 65%);
+}
+.logo { font-size:52px; font-weight:800; letter-spacing:0.14em; }
+.logo span { color:var(--accent); }
+.sub { margin-top:6px; font-size:14px; opacity:.8; letter-spacing:0.2rem; }
+.tag { margin-top:14px; font-size:18px; opacity:.95; }
+
+.cta {
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 28px;
+    background:var(--accent);
+    border-radius:40px;
+    color:#000; text-decoration:none; font-weight:700;
+}
+
+
+/* BLOCK SECTIONS */
+.block { max-width:900px; margin:80px auto; padding:0 24px; }
+.block h2 { font-size:32px; margin-bottom:14px; }
+.lead { font-size:18px; opacity:.85; max-width:700px; }
+
+
+/* SERVICES */
+.grid { display:grid; gap:22px; margin-top:30px; }
+@media(min-width:780px){ .grid{ grid-template-columns:repeat(3,1fr); } }
+
+.card {
+    background:rgba(255,255,255,0.04);
+    padding:20px; border-radius:14px;
+    border:1px solid rgba(255,255,255,0.06);
+    box-shadow:0 4px 18px rgba(0,0,0,.35);
+}
+.card h3 { margin-bottom:10px; }
+.card ul{ padding-left:18px; margin-top:10px; }
+.price{ margin-top:14px; font-weight:700; color:var(--accent); }
+
+
+/* BENEFITS */
+.benefits { margin-top:16px; padding-left:18px; font-size:18px; }
+.benefits li{ margin-bottom:8px; }
+
+
+/* CONTACT */
+.center{text-align:center;}
+.note{margin-top:8px; opacity:.6;font-size:14px;}
+
+
+/* FOOTER */
+footer{text-align:center; padding:30px 0; opacity:.6; margin-top:60px;}
