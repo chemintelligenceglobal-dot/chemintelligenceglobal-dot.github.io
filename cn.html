@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>CHEMCINOON — Chem Intelligence (中文)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+
+<header class="hero-light fade-section" id="top">
+  <div class="top-bar">
+    <div class="small-mark">CI</div>
+    <div class="lang-switch">
+      <a href="index.html">EN</a> ·
+      <a href="fr.html">FR</a> ·
+      <a href="de.html">DE</a> ·
+      <a href="lu.html">LU</a> ·
+      <a href="cn.html">中文</a>
+    </div>
+  </div>
+
+  <h1 class="logo-light">CHEMCINOON</h1>
+  <div class="subtitle">CHEM INTELLIGENCE</div>
+
+  <p class="meta-line">目前仅接有限数量的项目</p>
+
+  <p class="tagline-main">
+    用智能、多样化的系统，支撑长期稳定的成功。
+  </p>
+  <p class="subtext">
+    我们帮助创始人和小团队理清商业模式，减轻日常运营压力，
+    用自动化和 AI 内容系统，建立可持续的曝光和增长。
+  </p>
+
+  <a href="#contact" class="btn-main">预约 Business X-Ray 审视 →</a>
+
+  <p class="for-line">
+    支持语言：EN · FR · DE · 中文 · LU
+  </p>
+</header>
+
+<main>
+
+  <section id="what-we-do" class="section fade-section">
+    <h2>我们在做什么</h2>
+    <p class="text">
+      把商业策略、流程自动化和 AI 创作结合起来，
+      让你的公司结构更清晰、执行更轻松、内容输出更连续。
+    </p>
+    <div class="pill-row">
+      <span>商业 X-Ray 审视</span>
+      <span>自动化蓝图</span>
+      <span>AI 视频流水线</span>
+    </div>
+  </section>
+
+  <section id="services" class="section fade-section">
+    <h2>核心服务</h2>
+    <p class="text">
+      从你当下最卡的地方开始：清晰度、执行力或曝光度。
+      不同模块可以组合成一套完整的增长系统。
+    </p>
+
+    <div class="service-grid">
+
+      <div class="service">
+        <h3>📊 Business X-Ray 审视</h3>
+        <p>
+          深度梳理你的商业模型、市场位置、风险点和增长杠杆，
+          输出 30/60/90 天的具体行动方案。
+        </p>
+        <ul>
+          <li>市场与竞品概览</li>
+          <li>模型和单笔经济性压力测试</li>
+          <li>风险与瓶颈分析</li>
+          <li>30/60/90 天路线图</li>
+        </ul>
+        <div class="price">起步区间：499–1 600 €</div>
+      </div>
+
+      <div class="service">
+        <h3>⚙ 自动化系统</h3>
+        <p>
+          用 AI 和工具替代重复劳动：设计工作流、仪表盘和 SOP，
+          把你从「忙到飞起」解放出来。
+        </p>
+        <ul>
+          <li>流程 &amp; 工作流梳理</li>
+          <li>邮件 → CRM → 表格 → 看板 数据流</li>
+          <li>自动生成 SOP 与操作指引</li>
+          <li>监控与迭代计划</li>
+        </ul>
+        <div class="price">搭建：900–4 900 €，可做长期支持</div>
+      </div>
+
+      <div class="service">
+        <h3>🎥 AI 视频增长引擎</h3>
+        <p>
+          一套可复用的短视频内容系统，
+          把你的想法，稳定地变成输出。
+        </p>
+        <ul>
+          <li>脚本结构和开头 Hook 设计</li>
+          <li>声音与画面工作流</li>
+          <li>批量制作（每月 10–60 条）</li>
+          <li>发布节奏和漏斗节点设计</li>
+        </ul>
+        <div class="price">约 299–3 200 €（视项目规模而定）</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-section">
+    <h2>聊一聊你的情况</h2>
+    <p class="text">
+      简单介绍一下你现在的项目、行业和压力点，我们会建议比较合适的切入点：
+      Business X-Ray、自动化或视频引擎。
+    </p>
+
+    <a href="mailto:contact@chemcinoon.com" class="btn-main">
+      发邮件给 Chemcinoon
+    </a>
+
+    <p class="text small-top">
+      可以用中文 / 英文 / 法语 / 德语 回复。  
+      也可以通过：WhatsApp · TikTok · YouTube · Chem Intelligence GPT（即将上线）联系。
+    </p>
+  </section>
+
+</main>
+
+<footer class="fade-section">
+  <p>© <span id="year"></span> CHEMCINOON — Chem Intelligence · 通过智能、多样系统支持长期稳定成长。</p>
+  <div class="footer-links">
+    <a href="privacy.html">隐私政策</a> ·
+    <a href="terms.html">使用条款</a> ·
+    <a href="cookies.html">Cookie 政策</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").innerText = new Date().getFullYear();
+  const faders = document.querySelectorAll(".fade-section");
+  const observer = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible"); }),
+    { threshold: 0.15 }
+  );
+  faders.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
