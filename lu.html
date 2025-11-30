@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="lb">
+<head>
+  <meta charset="UTF-8">
+  <title>CHEMCINOON — Chem Intelligence (LU)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+
+<header class="hero-light fade-section" id="top">
+  <div class="top-bar">
+    <div class="small-mark">CI</div>
+    <div class="lang-switch">
+      <a href="index.html">EN</a> ·
+      <a href="fr.html">FR</a> ·
+      <a href="de.html">DE</a> ·
+      <a href="lu.html">LU</a> ·
+      <a href="cn.html">中文</a>
+    </div>
+  </div>
+
+  <h1 class="logo-light">CHEMCINOON</h1>
+  <div class="subtitle">CHEM INTELLIGENCE</div>
+
+  <p class="meta-line">Fir ausgewielte Projeten zu Lëtzebuerg an der Groussregioun</p>
+
+  <p class="tagline-main">
+    Sustainable success, och fir kleng Teams, mat intelligente Systemer.
+  </p>
+  <p class="subtext">
+    Mir hëllefen Grënner a kleng Ekippen tëscht Lëtzebuerg, Däitschland a Frankräich
+    méi Struktur, méi Automatisatioun an eng roueg, intelligentsichtbar Präsenz opzebauen.
+  </p>
+
+  <a href="#contact" class="btn-main">Business X-Ray ufroen →</a>
+
+  <p class="for-line">
+    Sproochen: EN · FR · DE · LU · 中文 (no Bedarf)
+  </p>
+</header>
+
+<main>
+
+  <section id="what-we-do" class="section fade-section">
+    <h2>Wat mir maachen</h2>
+    <p class="text">
+      Kombinatioun aus Business-Analyse, Automatisatioun an AI-Content,
+      fir datt d’Alltag méi liicht gëtt an d’Wuesstem méi stabil.
+    </p>
+    <div class="pill-row">
+      <span>Business X-Ray</span>
+      <span>Automatisatioun</span>
+      <span>AI Video / Contenu</span>
+    </div>
+  </section>
+
+  <!-- You can keep services text in DE/EN for clarity -->
+  <section id="services" class="section fade-section">
+    <h2>Kernleistungen (LU / DE Kontext)</h2>
+    <p class="text">
+      Fokus op Betriber a Projeten ronderëm Lëtzebuerg (Cross-Border, Finanzen, Kreativ-Projeten).
+      Mir schaffen diskret an op Mooss.
+    </p>
+
+    <div class="service-grid">
+
+      <div class="service">
+        <h3>📊 Business X-Ray Audit</h3>
+        <p>
+          Iwwersiicht iwwer Modell, Risiko, Wuesstems-Optionen a konkret Schrëtt fir déi nächst 30/60/90 Deeg.
+        </p>
+        <ul>
+          <li>Analyse vun Akommesströmen a Käschten</li>
+          <li>Engpässer a Chancen</li>
+          <li>Strategie-Empfehlungen</li>
+        </ul>
+        <div class="price">499–1.600 €</div>
+      </div>
+
+      <div class="service">
+        <h3>⚙ Automatisatiouns-Systemer</h3>
+        <p>
+          Prozesser mat AI an Tools verknëppen, sou datt Dir manner Mikro-Tasks hutt
+          a méi Zäit fir Entscheedungen.
+        </p>
+        <ul>
+          <li>Workflow-Mapping</li>
+          <li>Reporting &amp; Dashboards</li>
+          <li>SOPs fir Team &amp; Stakeholder</li>
+        </ul>
+        <div class="price">900–4.900 € (je no Scope)</div>
+      </div>
+
+      <div class="service">
+        <h3>🎥 AI-Video &amp; Content</h3>
+        <p>
+          Kuerz-Videoen a Social-Content mat AI ënnerstëtzt,
+          fir eng konstant awer realistesch Präsenz.
+        </p>
+        <ul>
+          <li>Scripts &amp; Hooks</li>
+          <li>Batch-Produktioun</li>
+          <li>Verdeelungs-Rhythmus</li>
+        </ul>
+        <div class="price">Ab 299 €</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-section">
+    <h2>Kontakt</h2>
+    <p class="text">
+      Kuerz E-Mail mat: wien Dir sidd, wou Dir schafft (LU / Grenzregioun)
+      a wéi eng Erausfuerderung Dir am Moment hutt.
+    </p>
+
+    <a href="mailto:contact@chemcinoon.com" class="btn-main">
+      contact@chemcinoon.com
+    </a>
+  </section>
+
+</main>
+
+<footer class="fade-section">
+  <p>© <span id="year"></span> CHEMCINOON — Chem Intelligence · Lëtzebuerg &amp; Groussregioun.</p>
+  <div class="footer-links">
+    <a href="privacy.html">Privacy</a> ·
+    <a href="terms.html">Terms</a> ·
+    <a href="cookies.html">Cookies</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").innerText = new Date().getFullYear();
+  const faders = document.querySelectorAll(".fade-section");
+  const observer = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible"); }),
+    { threshold: 0.15 }
+  );
+  faders.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
