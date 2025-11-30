@@ -17,12 +17,12 @@
 <body>
 
   <!-- TOP / HERO -->
-  <header class="hero-light">
+  <header class="hero-light fade-section" id="top">
 
     <div class="top-bar">
       <div class="small-mark">CI</div>
       <div class="lang-switch">
-        EN · FR · DE · LU · 中文
+        EN · FR · DE · 中文
       </div>
     </div>
 
@@ -42,14 +42,14 @@
     <a href="#contact" class="btn-main">Book a Business X-Ray Audit →</a>
 
     <p class="for-line">
-      For: founders, small teams, creative operators · Focus: strategy, automation, AI content
+      Languages: EN · FR · DE · 中文 · LU (on request)
     </p>
   </header>
 
   <main>
 
     <!-- WHAT WE DO -->
-    <section id="what-we-do" class="section">
+    <section id="what-we-do" class="section fade-section">
       <h2>What we do</h2>
       <p class="text">
         We combine business strategy, process automation and creative AI workflows
@@ -64,7 +64,7 @@
     </section>
 
     <!-- HOW WE THINK -->
-    <section id="how-we-think" class="section">
+    <section id="how-we-think" class="section fade-section">
       <h2>How we think</h2>
       <p class="text">
         Diverse thinking, sustainable execution, clear systems.
@@ -79,7 +79,7 @@
     </section>
 
     <!-- CORE SERVICES -->
-    <section id="services" class="section">
+    <section id="services" class="section fade-section">
       <h2>Core services</h2>
       <p class="text">
         Start where you feel the most friction right now:
@@ -137,8 +137,48 @@
       </div>
     </section>
 
+    <!-- AI INFLUENCER / PERSONA -->
+    <section id="persona" class="section fade-section">
+      <h2>AI Persona · Brand Presence</h2>
+      <p class="text">
+        For selected projects, we design an AI-led digital presence — a consistent,
+        multilingual persona that represents your brand across channels (video, chat,
+        social, and content), while you stay focused on decisions and execution.
+      </p>
+
+      <div class="persona-grid">
+        <div class="persona-card">
+          <h3>AI Brand Face</h3>
+          <p>
+            A carefully crafted, respectful AI persona that aligns with your brand values:
+            professional, multilingual and adaptable rather than just “a pretty avatar”.
+          </p>
+          <ul>
+            <li>Personalised tone and narrative</li>
+            <li>Language-ready (EN / FR / DE / 中文)</li>
+            <li>Designed for long-term trust and recognition</li>
+          </ul>
+        </div>
+        <div class="persona-card">
+          <h3>Where it shows up</h3>
+          <p>
+            The persona can appear in:
+          </p>
+          <ul>
+            <li>Short-form video series</li>
+            <li>Website assistants &amp; GPTs</li>
+            <li>Social media content flows</li>
+          </ul>
+          <p class="persona-note">
+            This is optional and always co-designed with you so it fits your comfort,
+            boundaries and ethics.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- BENEFITS -->
-    <section id="benefits" class="section">
+    <section id="benefits" class="section fade-section">
       <h2>What you gain</h2>
       <ul class="benefits">
         <li>Clear understanding of your model, market and next 90 days.</li>
@@ -149,7 +189,7 @@
     </section>
 
     <!-- HOW WE WORK -->
-    <section id="how-we-work" class="section">
+    <section id="how-we-work" class="section fade-section">
       <h2>How we work</h2>
       <p class="text">
         We prefer short, focused cycles: diagnose → design → implement.
@@ -164,26 +204,26 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section center">
+    <section id="contact" class="section fade-section">
       <h2>Ready to explore what’s possible?</h2>
       <p class="text">
         Share a short note about your business and where you feel stuck — we’ll suggest
         a suitable starting point: Business X-Ray, Automation, or Video Engine.
       </p>
 
-      <!-- ✏️ CHANGE THIS EMAIL TO YOUR REAL ONE -->
-      <a href="mailto:YOUR.EMAIL@EXAMPLE.COM" class="btn-main">
+      <a href="mailto:contact@chemcinoon.com" class="btn-main">
         Contact Chemcinoon
       </a>
 
       <p class="text small-top">
-        Or connect via: WhatsApp · TikTok · YouTube · Chem Intelligence GPT
+        Response languages: EN / FR / DE / 中文.  
+        Or connect via: WhatsApp · TikTok · YouTube · Chem Intelligence GPT (coming soon).
       </p>
     </section>
 
   </main>
 
-  <footer>
+  <footer class="fade-section">
     <p>© <span id="year"></span> CHEMCINOON — Chem Intelligence · sustainable success through intelligent, diverse systems.</p>
     <div class="footer-links">
       <a href="privacy.html">Privacy Policy</a> ·
@@ -193,7 +233,22 @@
   </footer>
 
   <script>
+    // Footer year
     document.getElementById("year").innerText = new Date().getFullYear();
+
+    // Fade-in on scroll
+    const faders = document.querySelectorAll(".fade-section");
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+    faders.forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
